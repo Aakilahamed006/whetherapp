@@ -1,0 +1,120 @@
+/* General body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(45deg, #1e3c72, #2a5298);
+    color: #fff;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main container for content */
+.container {
+    background-color: rgba(0, 0, 0, 0.6);  /* Semi-transparent background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    width: 350px;
+    text-align: center;
+}
+
+/* Heading for the Weather App */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+/* Form to handle city input */
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px 15px;
+    width: 80%;
+    border: none;
+    border-radius: 25px;
+    margin-right: 10px;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Add focus effect on the input */
+input[type="text"]:focus {
+    border: 2px solid #fff;
+    background-color: #f1f1f1;
+}
+
+/* Submit button styling */
+button {
+    padding: 12px 20px;
+    border: none;
+    background-color: #00aaff;
+    color: white;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+/* Hover effect on button */
+button:hover {
+    background-color: #0099cc;
+}
+
+/* Weather information container */
+.weather-info {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.weather-info h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* Styling the weather details */
+.weather-info p {
+    font-size: 1.2em;
+    margin: 8px 0;
+    color: #fff;
+}
+
+/* Loading or no city selected message */
+.loading-text {
+    font-size: 1.5em;
+    color: #e0e0e0;
+    font-style: italic;
+}
+
+/* Responsiveness for smaller screens */
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    input[type="text"] {
+        width: 70%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
